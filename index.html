@@ -218,6 +218,25 @@
             z-index: 2;
         }
 
+        .footer-contact {
+            margin-top: 12px;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .footer-contact a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .footer-contact a:hover {
+            color: var(--accent);
+        }
+
         @media (max-width: 968px) {
             .container {
                 grid-template-columns: 1fr;
@@ -281,6 +300,10 @@
 
     <footer>
         <p>&copy; 2026 PolyPall's Unique • A community for hand crafters</p>
+        <div class="footer-contact">
+            <a href="https://phenitesw.github.io/Phenite/" target="_blank">PheniteSW</a>
+            <a href="mailto:polySW@proton.me">polySW@proton.me</a>
+        </div>
     </footer>
 </body>
 </html>
